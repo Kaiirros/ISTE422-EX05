@@ -1,0 +1,7 @@
+services:
+  apache:
+    image: my-apache-site:latest
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    container_name: apache-container
